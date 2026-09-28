@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>245. Email Campaign Builder</title><style>
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:#f5f7fb;color:#172033}
+.app{max-width:1180px;margin:auto;padding:32px}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px}
+.brand{font-weight:800;font-size:20px}.badge{padding:7px 11px;border-radius:999px;background:#e9eefc;color:#4056a8;font-size:12px;font-weight:700}
+h1{font-size:32px;margin:0 0 8px}h2{font-size:18px;margin:0 0 14px}.muted{color:#697386}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid #e5e9f2;border-radius:16px;padding:20px;box-shadow:0 8px 25px rgba(30,45,80,.06)}
+.row{display:flex;align-items:center;justify-content:space-between;gap:14px}.pill{padding:6px 10px;border-radius:999px;background:#eef2f7;font-size:12px}
+.big{font-size:30px;font-weight:800;margin:8px 0}.btn{border:0;border-radius:10px;padding:10px 14px;background:#273b8f;color:white;font-weight:700;cursor:pointer}
+input,select,textarea{width:100%;padding:11px 12px;border:1px solid #d9deea;border-radius:10px;background:white}label{font-size:13px;font-weight:700;display:block;margin:12px 0 6px}
+.bar{height:10px;background:#e9edf4;border-radius:99px;overflow:hidden}.bar i{display:block;height:100%;width:var(--w,60%);background:#5267c9;border-radius:inherit}
+.bars{display:grid;gap:13px}.notice{padding:13px;border-radius:12px;background:#f0f4ff;border:1px solid #dce4ff}.success{background:#eefaf2;border-color:#d5f0dc}.warn{background:#fff7e8;border-color:#f4dfb4}.danger{background:#fff0f0;border-color:#f2d0d0}
+.table{width:100%;border-collapse:collapse}.table th,.table td{padding:12px;text-align:left;border-bottom:1px solid #edf0f5;font-size:13px}
+.chart{height:180px;display:flex;align-items:end;gap:8px;padding:15px 5px;border-bottom:1px solid #ddd}.col{flex:1;height:var(--h);background:#6576d6;border-radius:6px 6px 0 0}
+.timeline{border-left:2px solid #dfe4ee;padding-left:20px;display:grid;gap:18px}.event{position:relative}.event:before{content:"";position:absolute;left:-27px;top:4px;width:10px;height:10px;border-radius:50%;background:#566bd0}
+.tags{display:flex;flex-wrap:wrap;gap:8px}.tag{padding:7px 10px;border-radius:8px;background:#eef1f7;font-size:12px}
+.flow{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.step{padding:10px 13px;border-radius:10px;background:#eef1f6}.arrow{color:#98a2b3}
+@media(max-width:850px){.grid{grid-template-columns:1fr 1fr}}@media(max-width:560px){.grid{grid-template-columns:1fr}.top{align-items:flex-start;flex-direction:column}h1{font-size:25px}}
+</style></head>
+<body><main class="app"><div class="top"><div class="brand">CSS Lab • Experiment 245</div><span class="badge">Standalone HTML + CSS</span></div>
+<h1>Email Campaign Builder</h1><p class="muted">Experiment 245 • Open directly in VS Code or with Live Server.</p>
+
+<div class="grid">
+<section class="card" style="grid-column:span 2"><h2>Email Campaign Builder</h2><div class="notice"><b>Campaign status:</b> Scheduled</div>
+<label>Subject</label><input value="Your weekly product update">
+<label>Message</label><textarea rows="6">Here is your latest product update and account activity.</textarea>
+<button class="btn" style="margin-top:14px">Save Campaign</button></section>
+<section class="card"><h2>Audience</h2><div class="big">8,420</div><p class="muted">Recipients</p><div class="bar"><i style="--w:84%"></i></div></section>
+<section class="card"><h2>Performance</h2><div class="row"><span>Delivered</span><b>98%</b></div><div class="row" style="margin-top:12px"><span>Opened</span><b>64%</b></div><div class="row" style="margin-top:12px"><span>Clicked</span><b>18%</b></div></section>
+</div>
+</main></body></html>

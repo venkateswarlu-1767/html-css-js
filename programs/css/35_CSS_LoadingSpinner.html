@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Loading Spinner</title>
+    <style>
+        .spinner {
+            width: 70px;
+            height: 70px;
+            border: 8px solid #ddd;
+            border-top: 8px solid blue;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Loading...</h1>
+    <div class="spinner"></div>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Overflow</title>
+
+    <style>
+        .box1 {
+            width: 300px;
+            height: 100px;
+            border: 2px solid red;
+
+            overflow: auto;
+        }
+
+        .box2 {
+            width: 300px;
+            height: 100px;
+            border: 2px solid blue;
+
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
+        }
+
+        .box3 {
+            width: 300px;
+            height: 100px;
+            border: 2px solid green;
+
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Overflow</h1>
+
+    <h2>Overflow Auto</h2>
+
+    <div class="box1">
+        This is a long content area. When the content
+        becomes larger than the box, a scrollbar appears
+        automatically.
+    </div>
+
+    <h2>Overflow X and Y</h2>
+
+    <div class="box2">
+        This is a very long horizontal content used to
+        demonstrate overflow-x scrolling.
+    </div>
+
+    <h2>Overflow Hidden</h2>
+
+    <div class="box3">
+        This content is hidden when it goes outside
+        the specified box.
+    </div>
+
+</body>
+
+</html>

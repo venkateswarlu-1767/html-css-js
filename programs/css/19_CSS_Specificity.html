@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Specificity</title>
+    <style>
+        body {
+            font-family: Arial;
+            color: green;
+        }
+
+        p {
+            color: blue;
+        }
+
+        .special {
+            color: orange;
+        }
+
+        #unique {
+            color: red;
+        }
+
+        .box {
+            border: 2px solid black;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h2>CSS Inheritance</h2>
+
+        <p>This paragraph is blue.</p>
+
+        <p class="special">
+            This paragraph is orange.
+        </p>
+
+        <p class="special" id="unique">
+            This paragraph is red because ID
+            specificity is higher.
+        </p>
+
+        <p>
+            Text inherits the body's font family.
+        </p>
+    </div>
+</body>
+
+</html>

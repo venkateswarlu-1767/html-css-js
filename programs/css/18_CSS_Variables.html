@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Variables</title>
+    <style>
+        :root {
+            --main-color: #2563eb;
+            --bg-color: #eff6ff;
+            --card-padding: 20px;
+        }
+
+        body {
+            font-family: Arial;
+            background: var(--bg-color);
+            text-align: center;
+        }
+
+        .card {
+            background: white;
+            padding: var(--card-padding);
+            margin: 50px auto;
+            width: 300px;
+            border-radius: 12px;
+        }
+
+        h1 {
+            color: var(--main-color);
+        }
+
+        button {
+            background: var(--main-color);
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>CSS Variables</h1>
+        <p>Using custom properties in CSS.</p>
+        <button>Click Me</button>
+    </div>
+</body>
+
+</html>

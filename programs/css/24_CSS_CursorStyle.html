@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Cursor Styles</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+        }
+
+        .box {
+            padding: 20px;
+            margin: 15px auto;
+            width: 250px;
+            background: lightblue;
+            border-radius: 8px;
+        }
+
+        .pointer {
+            cursor: pointer;
+        }
+
+        .wait {
+            cursor: wait;
+        }
+
+        .help {
+            cursor: help;
+        }
+
+        .crosshair {
+            cursor: crosshair;
+        }
+
+        button {
+            cursor: pointer;
+            padding: 12px 20px;
+            background: blue;
+            color: white;
+            border: none;
+        }
+
+        button:hover {
+            background: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Cursor Styles</h1>
+
+    <div class="box pointer">Pointer Cursor</div>
+    <div class="box wait">Wait Cursor</div>
+    <div class="box help">Help Cursor</div>
+    <div class="box crosshair">Crosshair Cursor</div>
+
+    <button onclick="alert('Button clicked!')">
+        Click Me
+    </button>
+</body>
+
+</html>

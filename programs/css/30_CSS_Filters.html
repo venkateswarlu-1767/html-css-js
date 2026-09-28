@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Filters</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background: #f1f5f9;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            width: 220px;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .blur {
+            filter: blur(3px);
+        }
+
+        .gray {
+            filter: grayscale(100%);
+        }
+
+        .bright {
+            filter: brightness(150%);
+        }
+
+        .contrast {
+            filter: contrast(200%);
+        }
+
+        .opacity {
+            filter: opacity(40%);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Filters</h1>
+
+    <div class="container">
+        <div class="card">
+            <h3>Blur</h3>
+            <img class="blur" src="https://picsum.photos/id/1015/400/300" alt="Nature">
+        </div>
+
+        <div class="card">
+            <h3>Grayscale</h3>
+            <img class="gray" src="https://picsum.photos/id/1015/400/300" alt="Nature">
+        </div>
+
+        <div class="card">
+            <h3>Brightness</h3>
+            <img class="bright" src="https://picsum.photos/id/1015/400/300" alt="Nature">
+        </div>
+
+        <div class="card">
+            <h3>Contrast</h3>
+            <img class="contrast" src="https://picsum.photos/id/1015/400/300" alt="Nature">
+        </div>
+
+        <div class="card">
+            <h3>Opacity</h3>
+            <img class="opacity" src="https://picsum.photos/id/1015/400/300" alt="Nature">
+        </div>
+    </div>
+</body>
+
+</html>

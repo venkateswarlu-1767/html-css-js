@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tabs</title>
+    <style>
+        button {
+            padding: 12px;
+            border: 0;
+            background: #ddd
+        }
+
+        button:hover {
+            background: lightblue
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tab Navigation</h1>
+    <button onclick="show('Home')">Home</button>
+    <button onclick="show('Profile')">Profile</button>
+    <button onclick="show('Settings')">Settings</button>
+    <h2 id="result">Home Content</h2>
+    <script>
+        function show(name) {
+            document.getElementById("result").textContent =
+                name + " Content";
+        }
+    </script>
+</body>
+
+</html>

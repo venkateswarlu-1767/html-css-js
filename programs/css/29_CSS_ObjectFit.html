@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Object Fit</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            width: 250px;
+            padding: 10px;
+            border: 2px solid gray;
+        }
+
+        img {
+            width: 220px;
+            height: 150px;
+            border: 2px solid black;
+        }
+
+        .fill {
+            object-fit: fill;
+        }
+
+        .contain {
+            object-fit: contain;
+        }
+
+        .cover {
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .position {
+            object-fit: cover;
+            object-position: top;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Object Fit</h1>
+
+    <div class="container">
+        <div class="card">
+            <h3>Fill</h3>
+            <img class="fill" src="https://picsum.photos/id/237/400/300" alt="Dog">
+        </div>
+
+        <div class="card">
+            <h3>Contain</h3>
+            <img class="contain" src="https://picsum.photos/id/237/400/300" alt="Dog">
+        </div>
+
+        <div class="card">
+            <h3>Cover</h3>
+            <img class="cover" src="https://picsum.photos/id/237/400/300" alt="Dog">
+        </div>
+
+        <div class="card">
+            <h3>Object Position: Top</h3>
+            <img class="position" src="https://picsum.photos/id/237/400/300" alt="Dog">
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mega Menu</title>
+    <style>
+        nav {
+            background: #123;
+            padding: 20px;
+            color: white
+        }
+
+        .mega {
+            display: none;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            background: #eee;
+            color: black;
+            padding: 20px;
+            box-sizing: border-box
+        }
+
+        nav:hover .mega {
+            display: flex;
+            justify-content: space-around
+        }
+
+        a {
+            color: white
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        Products
+        <div class="mega">
+            <div>
+                <h3>Platform</h3>
+                <p>Dashboard</p>
+                <p>Analytics</p>
+            </div>
+            <div>
+                <h3>Solutions</h3>
+                <p>Business</p>
+                <p>Education</p>
+            </div>
+            <div>
+                <h3>Resources</h3>
+                <p>Documentation</p>
+                <p>Support</p>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>

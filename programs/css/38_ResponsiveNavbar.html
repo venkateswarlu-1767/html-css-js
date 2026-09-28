@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Responsive Navbar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background: #123;
+            color: white
+        }
+
+        a {
+            color: white;
+            margin: 10px
+        }
+
+        @media(max-width:600px) {
+            nav {
+                flex-direction: column;
+                gap: 15px
+            }
+
+            .links {
+                display: flex;
+                flex-direction: column
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <strong>My SaaS</strong>
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Keyframe Animation</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: tomato;
+            animation: move 3s infinite alternate;
+        }
+
+        @keyframes move {
+            from {
+                transform: translateX(0);
+                background: tomato;
+            }
+
+            to {
+                transform: translateX(250px);
+                background: royalblue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Animation</h1>
+    <div class="box"></div>
+</body>
+
+</html>

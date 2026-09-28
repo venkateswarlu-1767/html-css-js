@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Float and Clear</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        .left {
+            float: left;
+            width: 120px;
+            height: 100px;
+            background: lightblue;
+            margin: 10px;
+            text-align: center;
+            padding-top: 20px;
+            box-sizing: border-box;
+        }
+
+        .right {
+            float: right;
+            width: 120px;
+            height: 100px;
+            background: lightgreen;
+            margin: 10px;
+            text-align: center;
+            padding-top: 20px;
+            box-sizing: border-box;
+        }
+
+        .clear {
+            clear: both;
+            background: #eee;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Float and Clear</h1>
+
+    <div class="left">Float Left</div>
+
+    <div class="right">Float Right</div>
+
+    <p>
+        Float allows elements to move to the
+        left or right side of their container.
+        Text can flow around floated elements.
+    </p>
+
+    <div class="clear">
+        This section uses clear: both.
+    </div>
+</body>
+
+</html>

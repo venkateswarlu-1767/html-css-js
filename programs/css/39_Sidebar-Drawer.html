@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sidebar Drawer</title>
+    <style>
+        body {
+            font-family: Arial
+        }
+
+        #menu {
+            display: none;
+            background: #172554;
+            width: 200px;
+            padding: 20px
+        }
+
+        #menu a {
+            display: block;
+            color: white;
+            padding: 12px
+        }
+
+        button {
+            padding: 10px
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="toggleMenu()">☰ Menu</button>
+    <div id="menu">
+        <a href="#">Home</a>
+        <a href="#">Profile</a>
+        <a href="#">Settings</a>
+    </div>
+    <script>
+        function toggleMenu() {
+            let menu = document.getElementById("menu");
+            menu.style.display =
+                menu.style.display === "block" ? "none" : "block";
+        }
+    </script>
+</body>
+
+</html>

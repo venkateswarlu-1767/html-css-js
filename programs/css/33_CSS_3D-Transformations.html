@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>3D Transformations</title>
+    <style>
+        .scene {
+            perspective: 500px;
+            margin: 50px;
+        }
+
+        .box {
+            width: 180px;
+            height: 120px;
+            background: purple;
+            color: white;
+            display: grid;
+            place-items: center;
+            transition: 1s;
+        }
+
+        .box:hover {
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS 3D Transformation</h1>
+    <div class="scene">
+        <div class="box">Hover Me</div>
+    </div>
+</body>
+
+</html>

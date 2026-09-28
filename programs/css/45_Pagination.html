@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pagination</title>
+    <style>
+        button {
+            padding: 12px;
+            border: 1px solid #ccc;
+            background: white;
+            cursor: pointer
+        }
+
+        button:hover {
+            background: royalblue;
+            color: white
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pagination</h1>
+    <button onclick="page(1)">1</button>
+    <button onclick="page(2)">2</button>
+    <button onclick="page(3)">3</button>
+    <button onclick="page(4)">4</button>
+    <p id="output">Page 1</p>
+    <script>
+        function page(n) {
+            document.getElementById("output").textContent =
+                "You are on page " + n;
+        }
+    </script>
+</body>
+
+</html>

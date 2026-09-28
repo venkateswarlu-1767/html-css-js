@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Outline</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+        }
+
+        .box {
+            width: 250px;
+            padding: 30px;
+            margin: 50px auto;
+            background: lightblue;
+            border: 2px solid black;
+            outline: 4px solid red;
+            outline-offset: 10px;
+        }
+
+        input {
+            padding: 12px;
+            border: 1px solid gray;
+        }
+
+        input:focus {
+            outline: 3px solid blue;
+            outline-offset: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Outline Properties</h1>
+
+    <div class="box">
+        Outline with Offset
+    </div>
+
+    <br><br>
+
+    <input type="text" placeholder="Click to focus">
+</body>
+
+</html>

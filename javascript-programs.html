@@ -3,368 +3,687 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Programs | Coding Practice Lab</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
-    <header class="site-header">
-        <a class="brand" href="index.html"><span class="brand-mark">&lt;/&gt;</span> Coding Practice Lab</a>
-        <nav><a class="" href="index.html">Home</a><a class="" href="html-programs.html">HTML</a><a class=""
-                href="css-programs.html">CSS</a><a class="active" href="javascript-programs.html">JavaScript</a><a
-                class="" href="about.html">About</a></nav>
-    </header>
-    <main class="container">
-        <section class="hero" style="text-align:left;padding-bottom:28px">
-            <div class="kicker">JAVASCRIPT PRACTICALS</div>
-            <h1>JavaScript Programs</h1>
-            <p>67 runnable programs. Open any program to view the source code, copy it, and run it in the browser.</p>
-        </section>
-        <section class="section" style="padding-top:0">
-            <input id="search" class="search" placeholder="Search JavaScript programs..."
-                oninput="filterPrograms('search','programGrid')">
-            <div id="programGrid" class="list-grid"><a class="program-card"
-                    href="programs/javascript/js-01-hello-world.html">
-                    <div><span class="number">JS 01</span>
-                        <h3>Hello World</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-02-arithmetic-operations.html">
-                    <div><span class="number">JS 02</span>
-                        <h3>Arithmetic Operations</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-03-largest-of-three-numbers.html">
-                    <div><span class="number">JS 03</span>
-                        <h3>Largest of Three Numbers</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-04-even-or-odd.html">
-                    <div><span class="number">JS 04</span>
-                        <h3>Even or Odd</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-05-positive-negative-or-zero.html">
-                    <div><span class="number">JS 05</span>
-                        <h3>Positive, Negative or Zero</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-06-factorial.html">
-                    <div><span class="number">JS 06</span>
-                        <h3>Factorial</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-07-fibonacci-series.html">
-                    <div><span class="number">JS 07</span>
-                        <h3>Fibonacci Series</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-08-prime-number.html">
-                    <div><span class="number">JS 08</span>
-                        <h3>Prime Number</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-09-palindrome-number.html">
-                    <div><span class="number">JS 09</span>
-                        <h3>Palindrome Number</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-10-reverse-number.html">
-                    <div><span class="number">JS 10</span>
-                        <h3>Reverse Number</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-11-sum-of-digits.html">
-                    <div><span class="number">JS 11</span>
-                        <h3>Sum of Digits</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-12-largest-and-smallest-in-array.html">
-                    <div><span class="number">JS 12</span>
-                        <h3>Largest and Smallest in Array</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-13-sort-an-array.html">
-                    <div><span class="number">JS 13</span>
-                        <h3>Sort an Array</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-14-array-sum-and-average.html">
-                    <div><span class="number">JS 14</span>
-                        <h3>Array Sum and Average</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-15-javascript-functions.html">
-                    <div><span class="number">JS 15</span>
-                        <h3>JavaScript Functions</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-16-arrow-functions.html">
-                    <div><span class="number">JS 16</span>
-                        <h3>Arrow Functions</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-17-string-methods.html">
-                    <div><span class="number">JS 17</span>
-                        <h3>String Methods</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-18-array-methods.html">
-                    <div><span class="number">JS 18</span>
-                        <h3>Array Methods</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-19-objects.html">
-                    <div><span class="number">JS 19</span>
-                        <h3>Objects</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-20-date-and-math-objects.html">
-                    <div><span class="number">JS 20</span>
-                        <h3>Date and Math Objects</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-21-if-else-statement.html">
-                    <div><span class="number">JS 21</span>
-                        <h3>If-Else Statement</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-22-switch-statement.html">
-                    <div><span class="number">JS 22</span>
-                        <h3>Switch Statement</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-23-for-loop.html">
-                    <div><span class="number">JS 23</span>
-                        <h3>For Loop</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-24-while-loop.html">
-                    <div><span class="number">JS 24</span>
-                        <h3>While Loop</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-25-do-while-loop.html">
-                    <div><span class="number">JS 25</span>
-                        <h3>Do-While Loop</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-26-break-and-continue.html">
-                    <div><span class="number">JS 26</span>
-                        <h3>Break and Continue</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-27-multiplication-table.html">
-                    <div><span class="number">JS 27</span>
-                        <h3>Multiplication Table</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-28-sum-of-natural-numbers.html">
-                    <div><span class="number">JS 28</span>
-                        <h3>Sum of Natural Numbers</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-29-leap-year.html">
-                    <div><span class="number">JS 29</span>
-                        <h3>Leap Year</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-30-simple-calculator.html">
-                    <div><span class="number">JS 30</span>
-                        <h3>Simple Calculator</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-31-count-vowels.html">
-                    <div><span class="number">JS 31</span>
-                        <h3>Count Vowels</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-32-count-consonants.html">
-                    <div><span class="number">JS 32</span>
-                        <h3>Count Consonants</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-33-reverse-string.html">
-                    <div><span class="number">JS 33</span>
-                        <h3>Reverse String</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-34-string-palindrome.html">
-                    <div><span class="number">JS 34</span>
-                        <h3>String Palindrome</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-35-count-words-in-a-string.html">
-                    <div><span class="number">JS 35</span>
-                        <h3>Count Words in a String</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-36-character-frequency.html">
-                    <div><span class="number">JS 36</span>
-                        <h3>Character Frequency</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-37-remove-duplicate-array-values.html">
-                    <div><span class="number">JS 37</span>
-                        <h3>Remove Duplicate Array Values</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-38-second-largest-number.html">
-                    <div><span class="number">JS 38</span>
-                        <h3>Second Largest Number</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-39-linear-search.html">
-                    <div><span class="number">JS 39</span>
-                        <h3>Linear Search</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-40-binary-search.html">
-                    <div><span class="number">JS 40</span>
-                        <h3>Binary Search</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-41-bubble-sort.html">
-                    <div><span class="number">JS 41</span>
-                        <h3>Bubble Sort</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-42-selection-sort.html">
-                    <div><span class="number">JS 42</span>
-                        <h3>Selection Sort</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-43-insertion-sort.html">
-                    <div><span class="number">JS 43</span>
-                        <h3>Insertion Sort</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-44-matrix-addition.html">
-                    <div><span class="number">JS 44</span>
-                        <h3>Matrix Addition</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-45-matrix-transpose.html">
-                    <div><span class="number">JS 45</span>
-                        <h3>Matrix Transpose</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-46-matrix-multiplication.html">
-                    <div><span class="number">JS 46</span>
-                        <h3>Matrix Multiplication</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-47-recursion-factorial.html">
-                    <div><span class="number">JS 47</span>
-                        <h3>Recursion Factorial</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-48-recursion-fibonacci.html">
-                    <div><span class="number">JS 48</span>
-                        <h3>Recursion Fibonacci</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-49-default-parameters.html">
-                    <div><span class="number">JS 49</span>
-                        <h3>Default Parameters</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-50-rest-parameters.html">
-                    <div><span class="number">JS 50</span>
-                        <h3>Rest Parameters</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-51-spread-operator.html">
-                    <div><span class="number">JS 51</span>
-                        <h3>Spread Operator</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-52-destructuring.html">
-                    <div><span class="number">JS 52</span>
-                        <h3>Destructuring</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-53-template-literals.html">
-                    <div><span class="number">JS 53</span>
-                        <h3>Template Literals</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-54-dom-element-manipulation.html">
-                    <div><span class="number">JS 54</span>
-                        <h3>DOM Element Manipulation</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-55-dom-button-click-event.html">
-                    <div><span class="number">JS 55</span>
-                        <h3>DOM Button Click Event</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-56-form-validation.html">
-                    <div><span class="number">JS 56</span>
-                        <h3>Form Validation</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-57-local-storage.html">
-                    <div><span class="number">JS 57</span>
-                        <h3>Local Storage</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-58-json-parse-and-stringify.html">
-                    <div><span class="number">JS 58</span>
-                        <h3>JSON Parse and Stringify</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-59-set-and-map.html">
-                    <div><span class="number">JS 59</span>
-                        <h3>Set and Map</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-60-common-elements-in-arrays.html">
-                    <div><span class="number">JS 60</span>
-                        <h3>Common Elements in Arrays</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-61-reverse-string.html">
-                    <div><span class="number">JS 61</span>
-                        <h3>Reverse String</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-62-string-palindrome.html">
-                    <div><span class="number">JS 62</span>
-                        <h3>String Palindrome</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-63-vowels-and-consonants.html">
-                    <div><span class="number">JS 63</span>
-                        <h3>Vowels and Consonants</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-64-count-words.html">
-                    <div><span class="number">JS 64</span>
-                        <h3>Count Words</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-65-character-frequency.html">
-                    <div><span class="number">JS 65</span>
-                        <h3>Character Frequency</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-66-regular-expressions.html">
-                    <div><span class="number">JS 66</span>
-                        <h3>Regular Expressions</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a><a class="program-card" href="programs/javascript/js-67-email-validation-using-regex.html">
-                    <div><span class="number">JS 67</span>
-                        <h3>Email Validation using Regex</h3>
-                    </div>
-                    <span class="open-link">View & Run →</span>
-                </a></div>
-        </section>
-    </main>
-    <footer class="footer">Coding Practice Lab • HTML, CSS & JavaScript Practical Programs</footer>
-    <script src="assets/script.js"></script>
-</body>
 
+<header class="site-header">
+    <a class="brand" href="index.html">
+        <span class="brand-mark">&lt;/&gt;</span> Coding Practice Lab
+    </a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="html-programs.html">HTML</a>
+        <a href="css-programs.html">CSS</a>
+        <a class="active" href="javascript-programs.html">JavaScript</a>
+        <a href="about.html">About</a>
+    </nav>
+</header>
+
+<main class="container">
+
+    <section class="hero" style="text-align:left;padding-bottom:28px">
+        <div class="kicker">JAVASCRIPT PRACTICALS</div>
+
+        <h1>JavaScript Programs</h1>
+
+        <p>
+            67 JavaScript practical programs. Open any program to
+            view the source code and run it in your browser.
+        </p>
+    </section>
+
+    <section class="section" style="padding-top:0">
+
+        <input
+            id="search"
+            class="search"
+            type="text"
+            placeholder="Search JavaScript programs..."
+            oninput="filterPrograms()"
+        >
+
+        <div id="programGrid" class="list-grid">
+
+            <!-- 01 -->
+            <a class="program-card" href="01-hello-world.html">
+                <div>
+                    <span class="number">JS 01</span>
+                    <h3>Hello World</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 02 -->
+            <a class="program-card" href="02-arithmetic-operations.html">
+                <div>
+                    <span class="number">JS 02</span>
+                    <h3>Arithmetic Operations</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 03 -->
+            <a class="program-card" href="03-largest-of-three-numbers.html">
+                <div>
+                    <span class="number">JS 03</span>
+                    <h3>Largest of Three Numbers</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 04 -->
+            <a class="program-card" href="04-even-or-odd.html">
+                <div>
+                    <span class="number">JS 04</span>
+                    <h3>Even or Odd</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 05 -->
+            <a class="program-card" href="05-positive-negative-zero.html">
+                <div>
+                    <span class="number">JS 05</span>
+                    <h3>Positive, Negative or Zero</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 06 -->
+            <a class="program-card" href="06-factorial.html">
+                <div>
+                    <span class="number">JS 06</span>
+                    <h3>Factorial</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 07 -->
+            <a class="program-card" href="07-fibonacci-series.html">
+                <div>
+                    <span class="number">JS 07</span>
+                    <h3>Fibonacci Series</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 08 -->
+            <a class="program-card" href="08-prime-number.html">
+                <div>
+                    <span class="number">JS 08</span>
+                    <h3>Prime Number</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 09 -->
+            <a class="program-card" href="09-palindrome-number.html">
+                <div>
+                    <span class="number">JS 09</span>
+                    <h3>Palindrome Number</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 10 -->
+            <a class="program-card" href="10-reverse-number.html">
+                <div>
+                    <span class="number">JS 10</span>
+                    <h3>Reverse Number</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 11 -->
+            <a class="program-card" href="11-sum-of-digits.html">
+                <div>
+                    <span class="number">JS 11</span>
+                    <h3>Sum of Digits</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 12 -->
+            <a class="program-card" href="12-largest-and-smallest-in-array.html">
+                <div>
+                    <span class="number">JS 12</span>
+                    <h3>Largest and Smallest in Array</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 13 -->
+            <a class="program-card" href="13-sort-an-array.html">
+                <div>
+                    <span class="number">JS 13</span>
+                    <h3>Sort an Array</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 14 -->
+            <a class="program-card" href="14-array-sum-and-average.html">
+                <div>
+                    <span class="number">JS 14</span>
+                    <h3>Array Sum and Average</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 15 -->
+            <a class="program-card" href="15-javascript-functions.html">
+                <div>
+                    <span class="number">JS 15</span>
+                    <h3>JavaScript Functions</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 16 -->
+            <a class="program-card" href="16-arrow-functions.html">
+                <div>
+                    <span class="number">JS 16</span>
+                    <h3>Arrow Functions</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 17 -->
+            <a class="program-card" href="17-string-methods.html">
+                <div>
+                    <span class="number">JS 17</span>
+                    <h3>String Methods</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 18 -->
+            <a class="program-card" href="18-array-methods.html">
+                <div>
+                    <span class="number">JS 18</span>
+                    <h3>Array Methods</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 19 -->
+            <a class="program-card" href="19-objects.html">
+                <div>
+                    <span class="number">JS 19</span>
+                    <h3>Objects</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 20 -->
+            <a class="program-card" href="20-date-and-math-objects.html">
+                <div>
+                    <span class="number">JS 20</span>
+                    <h3>Date and Math Objects</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 21 -->
+            <a class="program-card" href="21-dom-event-based-experiments.html">
+                <div>
+                    <span class="number">JS 21</span>
+                    <h3>DOM & Event-Based Experiments</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 22 -->
+            <a class="program-card" href="22-change-background-color.html">
+                <div>
+                    <span class="number">JS 22</span>
+                    <h3>Change Background Color</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 23 -->
+            <a class="program-card" href="23-button-click-event.html">
+                <div>
+                    <span class="number">JS 23</span>
+                    <h3>Button Click Event</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 24 -->
+            <a class="program-card" href="24-form-validation.html">
+                <div>
+                    <span class="number">JS 24</span>
+                    <h3>Form Validation</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 25 -->
+            <a class="program-card" href="25-dynamic-image-gallery.html">
+                <div>
+                    <span class="number">JS 25</span>
+                    <h3>Dynamic Image Gallery</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 26 -->
+            <a class="program-card" href="26-digital-clock.html">
+                <div>
+                    <span class="number">JS 26</span>
+                    <h3>Digital Clock</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 27 -->
+            <a class="program-card" href="27-simple-calculator.html">
+                <div>
+                    <span class="number">JS 27</span>
+                    <h3>Simple Calculator</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 28 -->
+            <a class="program-card" href="28-string-manipulation.html">
+                <div>
+                    <span class="number">JS 28</span>
+                    <h3>String Manipulation</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 29 -->
+            <a class="program-card" href="29-array-manipulation.html">
+                <div>
+                    <span class="number">JS 29</span>
+                    <h3>Array Manipulation</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 30 -->
+            <a class="program-card" href="30-object-manipulation.html">
+                <div>
+                    <span class="number">JS 30</span>
+                    <h3>Object Manipulation</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 31 -->
+            <a class="program-card" href="31-todo-list.html">
+                <div>
+                    <span class="number">JS 31</span>
+                    <h3>Todo List</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 32 -->
+            <a class="program-card" href="32-form-validation.html">
+                <div>
+                    <span class="number">JS 32</span>
+                    <h3>Form Validation</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 33 -->
+            <a class="program-card" href="33-dynamic-content.html">
+                <div>
+                    <span class="number">JS 33</span>
+                    <h3>Dynamic Content</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 34 -->
+            <a class="program-card" href="34-stopwatch.html">
+                <div>
+                    <span class="number">JS 34</span>
+                    <h3>Stopwatch</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 35 -->
+            <a class="program-card" href="35-image-slider.html">
+                <div>
+                    <span class="number">JS 35</span>
+                    <h3>Image Slider</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 36 -->
+            <a class="program-card" href="36-countdown-timer.html">
+                <div>
+                    <span class="number">JS 36</span>
+                    <h3>Countdown Timer</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 37 -->
+            <a class="program-card" href="37-advanced-javascript-lab.html">
+                <div>
+                    <span class="number">JS 37</span>
+                    <h3>Advanced JavaScript Lab</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 38 -->
+            <a class="program-card" href="38-spread-and-rest-operators.html">
+                <div>
+                    <span class="number">JS 38</span>
+                    <h3>Spread and Rest Operators</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 39 -->
+            <a class="program-card" href="39-destructuring.html">
+                <div>
+                    <span class="number">JS 39</span>
+                    <h3>Destructuring</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 40 -->
+            <a class="program-card" href="40-template-literals.html">
+                <div>
+                    <span class="number">JS 40</span>
+                    <h3>Template Literals</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 41 -->
+            <a class="program-card" href="41-fetch-api-data.html">
+                <div>
+                    <span class="number">JS 41</span>
+                    <h3>Fetch API Data</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 42 -->
+            <a class="program-card" href="42-json-parse-stringify.html">
+                <div>
+                    <span class="number">JS 42</span>
+                    <h3>JSON Parse and Stringify</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 43 -->
+            <a class="program-card" href="43-localstorage-store-retrieve.html">
+                <div>
+                    <span class="number">JS 43</span>
+                    <h3>LocalStorage Store and Retrieve</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 44 -->
+            <a class="program-card" href="44-sessionstorage.html">
+                <div>
+                    <span class="number">JS 44</span>
+                    <h3>SessionStorage</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 45 -->
+            <a class="program-card" href="45-date-object.html">
+                <div>
+                    <span class="number">JS 45</span>
+                    <h3>Date Object</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 46 -->
+            <a class="program-card" href="46-swap-two-numbers.html">
+                <div>
+                    <span class="number">JS 46</span>
+                    <h3>Swap Two Numbers</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 47 -->
+            <a class="program-card" href="47-gcd.html">
+                <div>
+                    <span class="number">JS 47</span>
+                    <h3>GCD</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 48 -->
+            <a class="program-card" href="48-lcm.html">
+                <div>
+                    <span class="number">JS 48</span>
+                    <h3>LCM</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 49 -->
+            <a class="program-card" href="49-armstrong-number.html">
+                <div>
+                    <span class="number">JS 49</span>
+                    <h3>Armstrong Number</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 50 -->
+            <a class="program-card" href="50-fibonacci-series.html">
+                <div>
+                    <span class="number">JS 50</span>
+                    <h3>Fibonacci Series</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 51 -->
+            <a class="program-card" href="51-prime-numbers.html">
+                <div>
+                    <span class="number">JS 51</span>
+                    <h3>Prime Numbers</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 52 -->
+            <a class="program-card" href="52-palindrome.html">
+                <div>
+                    <span class="number">JS 52</span>
+                    <h3>Palindrome</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 53 -->
+            <a class="program-card" href="53-factorial.html">
+                <div>
+                    <span class="number">JS 53</span>
+                    <h3>Factorial</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 54 -->
+            <a class="program-card" href="54-array-operations.html">
+                <div>
+                    <span class="number">JS 54</span>
+                    <h3>Array Operations</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 55 -->
+            <a class="program-card" href="55-remove-duplicates-array.html">
+                <div>
+                    <span class="number">JS 55</span>
+                    <h3>Remove Duplicates from Array</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 56 -->
+            <a class="program-card" href="56-form-validation.html">
+                <div>
+                    <span class="number">JS 56</span>
+                    <h3>Form Validation</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 57 -->
+            <a class="program-card" href="57-dom-manipulation.html">
+                <div>
+                    <span class="number">JS 57</span>
+                    <h3>DOM Manipulation</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 58 -->
+            <a class="program-card" href="58-event-handling.html">
+                <div>
+                    <span class="number">JS 58</span>
+                    <h3>Event Handling</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 59 -->
+            <a class="program-card" href="59-reverse-string.html">
+                <div>
+                    <span class="number">JS 59</span>
+                    <h3>Reverse String</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 60 -->
+            <a class="program-card" href="60-common-elements-array.html">
+                <div>
+                    <span class="number">JS 60</span>
+                    <h3>Common Elements in Arrays</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 61 -->
+            <a class="program-card" href="61-reverse-string.html">
+                <div>
+                    <span class="number">JS 61</span>
+                    <h3>Reverse String</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 62 -->
+            <a class="program-card" href="62-string-palindrome.html">
+                <div>
+                    <span class="number">JS 62</span>
+                    <h3>String Palindrome</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 63 -->
+            <a class="program-card" href="63-vowels-and-consonants.html">
+                <div>
+                    <span class="number">JS 63</span>
+                    <h3>Vowels and Consonants</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 64 -->
+            <a class="program-card" href="64-count-words.html">
+                <div>
+                    <span class="number">JS 64</span>
+                    <h3>Count Words</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 65 -->
+            <a class="program-card" href="65-character-frequency.html">
+                <div>
+                    <span class="number">JS 65</span>
+                    <h3>Character Frequency</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 66 -->
+            <a class="program-card" href="66-regular-expressions.html">
+                <div>
+                    <span class="number">JS 66</span>
+                    <h3>Regular Expressions</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+            <!-- 67 -->
+            <a class="program-card" href="67-email-regex-validation.html">
+                <div>
+                    <span class="number">JS 67</span>
+                    <h3>Email Validation using Regex</h3>
+                </div>
+                <span class="open-link">View & Run →</span>
+            </a>
+
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    Coding Practice Lab • HTML, CSS & JavaScript Practical Programs
+</footer>
+
+<script>
+function filterPrograms() {
+
+    const search = document
+        .getElementById("search")
+        .value
+        .toLowerCase();
+
+    const cards = document.querySelectorAll(".program-card");
+
+    cards.forEach(function(card) {
+
+        const text = card.innerText.toLowerCase();
+
+        if (text.includes(search)) {
+            card.style.display = "";
+        } else {
+            card.style.display = "none";
+        }
+
+    });
+}
+</script>
+
+</body>
 </html>

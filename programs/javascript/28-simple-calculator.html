@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>JavaScript 28 - Simple Calculator</title>
+<style>
+body{font-family:Arial,sans-serif;max-width:900px;margin:40px auto;padding:20px;line-height:1.5;background:#f5f7fb;color:#172033}
+.card,pre,.box{background:white;padding:20px;border-radius:12px;box-shadow:0 2px 10px #0001}
+input,button{padding:10px;margin:5px;border:1px solid #bbb;border-radius:7px}button{cursor:pointer}
+img{max-width:100%;border-radius:10px}.clock{font-size:2rem;font-weight:bold;margin:20px 0}
+.keys{display:grid;grid-template-columns:repeat(4,70px);gap:5px}.keys button{margin:0}
+.done{text-decoration:line-through;opacity:.6}.dark{background:#111;color:#eee}.dark .card{background:#222}
+</style></head>
+<body><p><a href="index.html">← JavaScript Index</a></p>
+<h1>Question 28</h1><p><strong>Create a simple calculator using HTML, CSS, and JavaScript.</strong></p><div class="card"><input id="display" readonly><div class="keys"><button class="key" data-value="7">7</button><button class="key" data-value="8">8</button><button class="key" data-value="9">9</button><button class="key" data-value="/">/</button><button class="key" data-value="4">4</button><button class="key" data-value="5">5</button><button class="key" data-value="6">6</button><button class="key" data-value="*">*</button><button class="key" data-value="1">1</button><button class="key" data-value="2">2</button><button class="key" data-value="3">3</button><button class="key" data-value="-">-</button><button class="key" data-value="0">0</button><button class="key" data-value=".">.</button><button class="key" data-value="C">C</button><button class="key" data-value="+">+</button><button class="key" data-value="=">=</button></div></div>
+<script>const display = document.getElementById('display');
+document.querySelectorAll('.key').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const value = btn.dataset.value;
+    if (value === '=') {
+      try { display.value = Function(`return ${display.value}`)(); }
+      catch { display.value = 'Error'; }
+    } else if (value === 'C') display.value = '';
+    else display.value += value;
+  });
+});</script></body></html>

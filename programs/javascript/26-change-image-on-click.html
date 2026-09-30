@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>JavaScript 26 - Change Image On Click</title>
+<style>
+body{font-family:Arial,sans-serif;max-width:900px;margin:40px auto;padding:20px;line-height:1.5;background:#f5f7fb;color:#172033}
+.card,pre,.box{background:white;padding:20px;border-radius:12px;box-shadow:0 2px 10px #0001}
+input,button{padding:10px;margin:5px;border:1px solid #bbb;border-radius:7px}button{cursor:pointer}
+img{max-width:100%;border-radius:10px}.clock{font-size:2rem;font-weight:bold;margin:20px 0}
+.keys{display:grid;grid-template-columns:repeat(4,70px);gap:5px}.keys button{margin:0}
+.done{text-decoration:line-through;opacity:.6}.dark{background:#111;color:#eee}.dark .card{background:#222}
+</style></head>
+<body><p><a href="index.html">← JavaScript Index</a></p>
+<h1>Question 26</h1><p><strong>Create a program to change an image when a button is clicked.</strong></p><div class="card"><img id="photo" src="https://picsum.photos/id/1015/500/300" alt="Demo image"><br><button id="imageBtn">Change Image</button></div>
+<script>const images = [
+  'https://picsum.photos/id/1015/500/300',
+  'https://picsum.photos/id/1025/500/300'
+];
+let index = 0;
+document.getElementById('imageBtn').addEventListener('click', () => {
+  index = (index + 1) % images.length;
+  document.getElementById('photo').src = images[index];
+});</script></body></html>

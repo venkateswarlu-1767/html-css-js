@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JS 07 - Fibonacci Series</title>
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body class="program-page">
+<header class="site-header">
+  <a class="brand" href="../../index.html"><span class="brand-mark">&lt;/&gt;</span> Coding Practice Lab</a>
+  <nav>
+    <a href="../../index.html">Home</a>
+    <a href="../../html-programs.html">HTML</a>
+    <a href="../../css-programs.html">CSS</a>
+    <a class="active" href="../../javascript-programs.html">JavaScript</a>
+  </nav>
+</header>
+<main class="container">
+  <a class="back-link" href="../../javascript-programs.html">← Back to JavaScript Programs</a>
+  <section class="program-hero">
+    <span class="tag">JavaScript 07</span>
+    <h1>Fibonacci Series</h1>
+    <p>Runnable JavaScript practical program.</p>
+  </section>
+  <section class="code-card">
+    <div class="card-head"><h2>Source Code</h2><button class="copy-btn" onclick="copyCode()">Copy Code</button></div>
+    <pre id="code"><code>let n = 10, a = 0, b = 1, series = [];
+for (let i = 0; i &lt; n; i++) {
+  series.push(a);
+  [a, b] = [b, a + b];
+}
+document.getElementById(&quot;output&quot;).textContent = series.join(&quot; &quot;);</code></pre>
+  </section>
+  <section class="output-card">
+    <div class="card-head"><h2>Output</h2><button class="run-btn" onclick="runProgram()">Run Program</button></div>
+    <pre id="output">Click “Run Program” to execute.</pre>
+  </section>
+</main>
+<script>
+const source = "let n = 10, a = 0, b = 1, series = [];\nfor (let i = 0; i < n; i++) {\n  series.push(a);\n  [a, b] = [b, a + b];\n}\ndocument.getElementById(\"output\").textContent = series.join(\" \");";
+function runProgram() {
+  const output = document.getElementById("output");
+  output.textContent = "";
+  try {
+    new Function(source)();
+    if (!output.textContent) output.textContent = "Program executed successfully.";
+  } catch (error) {
+    output.textContent = "Error: " + error.message;
+  }
+}
+function copyCode() {
+  navigator.clipboard.writeText(source);
+  const btn = document.querySelector(".copy-btn");
+  const old = btn.textContent;
+  btn.textContent = "Copied!";
+  setTimeout(() => btn.textContent = old, 1200);
+}
+</script>
+</body>
+</html>

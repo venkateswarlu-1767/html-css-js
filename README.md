@@ -1,7 +1,7 @@
 # HTML, CSS & JavaScript – Practical Programs
 
-**Student Name:** M. Shiva Nandheswara Reddy  
-**Register Number:** 250200545  
+**Student Name:** VENKATESWARLU LAKKU
+**Register Number:** 250200223  
 **Class / Section:** 6  
 **Subject:** HTML, CSS & JavaScript  
 **University:** Sai University
